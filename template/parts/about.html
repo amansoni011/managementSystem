@@ -1,0 +1,22 @@
+{% load static %}  
+<div class="container-fluid bg-white p-5 w-100  d-flex justify-content-center "  data-aos="fade-up">
+    <div class="container row">
+      <div class="col-12 col-md-6">
+        <img class="w-100" src="{% static 'imgs/6.jpeg' %}" alt="">
+      </div>
+      <div class="col-md-6 col-12 align-self-center">
+        <h5>About Royal Velvet</h5>
+        <h1>Luxury Hotel in The Heart of Gorakhpur.</h1>
+        <p>Experience the epitome of comfort and luxury at the Royal Velvet Hotel, ideally situated in the heart of Karim Nagar. Our hotel is conveniently located right in front of the Indraprasth Colony gate in Gorakhpur, making it the perfect choice for both business and leisure travelers.</p>
+        <!-- <button class="about-btn " >
+          <div class="text h-100">More</div>
+          <div class="icon "><i class="ti ti-arrow-right"></i></div>
+       </button> -->
+       <a href="{% url 'about' %}" class="about-btn " >
+        <div class="text h-100">More</div>
+          <div class="icon "><i class="ti ti-arrow-right"></i></div>
+       </a>
+      </div>
+    </div>
+  </div>
+  

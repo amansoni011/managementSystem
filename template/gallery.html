@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+   <div class="container-fluid">
+      <div class="container ">
+         <div class="col-12  d-flex justify-content-center gap-4">
+            <a href="" class="btn btn-danger">All</a>
+            <a href="" class="btn btn-danger">rooms</a>
+            <a href="" class="btn btn-danger">Restaurant</a>
+            <a href="" class="btn btn-danger">Banquet</a>
+         </div>
+         <div class="col-12 d-flex gap-5 flex-wrap py-5 justify-content-center">
+      {% for i in data %}
+      <div class="gallery-image">
+         <img src="media/{{i.image}}" alt="">
+      </div>   
+      {% endfor %}
+        </div>
+      </div>
+   </div>
+{% endblock body %}

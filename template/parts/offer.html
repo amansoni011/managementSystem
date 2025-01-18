@@ -1,0 +1,21 @@
+<div class="container-fluid d-flex justify-content-center text-center align-content-center">
+    <div class="container py-5">
+        <div class="col-12  d-flex flex-column text-center">
+            <h3>Exclusive Offers</h3>
+            <h1>Featured Special Offers</h1>
+        </div>
+       <div class="container-fluid d-flex justify-content-center text-center">
+            <div class="container d-flex flex-wrap justify-content-center gap-5 row p-5">
+                {% for i in data %}
+        <div class="offer col-12 d-flex bg-white flex-column flex-wrap justify-content-center align-content-center position-relative p-5">
+            <img src="/media/{{i.image}}" alt="image">
+            <h4>{{i.name}}</h4>
+            <p>"{{i.text}}"</p>
+            <div class="event-img  position-absolute">
+            </div>
+        </div>   
+        {% endfor %} 
+    </div>
+</div>       
+</div>
+</div> 

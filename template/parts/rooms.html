@@ -1,0 +1,29 @@
+{% load static %}
+<div class="container-fulid py-5 d-flex justify-content-center">
+    <div class="container gap-5 row justify-content-center ">
+        <div class="col-12  text-center ">
+            <h5>Discover</h5>
+            <h1>Rooms & Suites</h1>
+        </div>
+       {% for i in data3  %}
+       <div class="room col-12 col-md-3 p-0 bg-white position-relative">
+        <img class="w-100" src="media/{{i.image}}" alt="">
+       <div class="p-3">
+        <small>
+            <i class="ti ti-star"></i>
+            <i class="ti ti-star"></i>
+            <i class="ti ti-star"></i>
+            <i class="ti ti-star"></i>
+        </small>
+        <h3>{{i.name}}</h3>
+        <p>{{i.title}}</p>
+        <a href="/roomDetail/{{i.slug}}">view</a>
+        <div class="room-top position-absolute px-3 d-flex align-content-center">
+            {{i.type}}
+        </div>
+       </div>
+    </div>
+       {%  endfor %}
+        
+    </div>
+</div>

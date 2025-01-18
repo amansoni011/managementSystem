@@ -1,0 +1,16 @@
+<div class="container-fluid d-flex justify-content-center text-center bg-white">
+    <div class="container d-flex flex-wrap justify-content-center gap-5 row p-5">
+        <h1>What They’re Say About Us?</h1>
+        {% for i in data4 %}
+        <div class="event col-12 bg-white col-md-3 d-flex flex-column flex-wrap justify-content-center align-content-center position-relative p-5">
+            <div class="event-design  position-absolute"></div>
+            <p>"{{i.review}}"</p>
+            <h5>{{i.name}}</h5>
+            <small>{{i.post}}</small>
+            <div class="event-img  position-absolute">
+                <img src="/media/{{i.image}}" alt="image">
+              </div>
+          </div>
+          {% endfor %} 
+      </div> 
+  </div> 

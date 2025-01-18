@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!-- slider -->
+ {% include 'parts/slider.html' %}
+<!-- slider -->
+
+<!-- Availability -->
+  {% include './parts/Availability.html' %} 
+<!-- Availability -->
+
+<!-- about -->
+ {% include './parts/about.html' %}
+<!-- about -->
+
+<!-- offers -->
+  {% include './parts/offer.html' %} 
+<!-- offers -->
+
+<!-- Our Best Amenities -->
+ {% include './parts/Amenities.html' %}
+<!-- Our Best Amenities -->
+
+<!-- ROOMS     -->
+ {% include './parts/rooms.html' %} 
+<!-- ROOMS     -->
+
+
+<!-- list of Say About-->
+   {% include './parts/p_review.html' %}
+<!-- list of Say About -->
+
+<!-- contact    -->
+    {% include './parts/p_contact.html' %}
+<!-- contact    -->
+{% endblock body %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container w-50 p-5" >
+<form action="/mail" method="post">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Enter your name</label>
+    <input type="text" name="name" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Enter your email</label>
+    <input type="email" name="email" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Check - in:</label>
+    <input type="date" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Check - out:</label>
+    <input type="date" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Room</label>
+     <select name="Room" id="">
+       <option value="1">Room1</option>
+       <option value="2">Room2</option>
+       <option value="3">Room3</option>
+       <option value="4">Room4</option>
+     </select>
+  </div>
+  
+  <button>submit</button>
+</form>
+</div>
+{% endblock body %}
+
+{{data.name}}

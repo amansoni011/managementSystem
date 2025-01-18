@@ -1,0 +1,17 @@
+{% load static %}
+<div class="container-fluid  bg-white py-5">
+    <div class="container d-flex flex-wrap gap-3 align-content-center justify-content-center">
+        <div class="col-12 text-center">
+            <h5>Discover</h5>
+            <h1>Our Best Amenities</h1>
+            <p>The amenities at a Royal Velvet hotel are designed to offer
+                a high level of luxury and convenience, ensuring a memorable and comfortable stay.</p>
+            </div>
+            {% for i in data2 %}
+        <div class="item col-12 col-md-2 p-5 d-flex ami  flex-column text-center align-items-center">
+            <img src="media/{{i.image}}" alt="">
+            <p>{{i.i_name}}</p>
+        </div>
+            {% endfor data2 %}
+     </div>
+   </div>

@@ -1,0 +1,40 @@
+<div class="container-fulid avil ">
+    <div class="container  d-flex flex-wrap justify-content-between py-5">
+        <div class="col-2 ">
+            <p>Check - in:</p>
+            <input type="date" class="w-100" placeholder="08/30/2024">
+        </div>
+        <div class="col-2">
+            <p>Check - out:</p>
+            <input type="date" class="w-100 " placeholder="08/30/2024">
+        </div>
+        <div class="col-1 align-self-end">
+            <p>Rooms:</p>
+            <select name="ROOMS:"  aria-placeholder="Rooms">
+               <option value="1">1 room</option>
+               <option value="2">2 room</option>
+               <option value="3">3 room</option>
+               <option value="4">4 room</option>
+            </select>
+        </div>
+        <div class="col-1 align-self-end ">
+            <p>Adults:</p>
+            <select name="Adults" id="" aria-placeholder="Rooms">
+               <option value="1">1 Adults</option>
+               <option value="2">2 Adults</option>
+               <option value="3">3 Adults</option>
+               <option value="4">4 Adults</option>
+            </select>
+        </div>
+        <div class="col-1 align-self-end ">
+            <p>Child:</p>
+            <select name="Child:" aria-placeholder="Rooms" >
+               <option value="1">1 Child</option>
+               <option value="2">2 Child</option>
+               <option value="3">3 Child</option>
+               <option value="4">4 Child</option>
+            </select>
+        </div>
+        <a class="h-50 align-self-end mybtn" href="{% url 'rooms' %}">Check Availability</a>
+    </div>
+</div>
